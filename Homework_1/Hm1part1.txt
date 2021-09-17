@@ -1,0 +1,41 @@
+# Mauro Vargas 
+#CSCI 1300 CS1: Starting Computing 
+#Instructor: Fleming, Fall 2018 
+#Homework 1 
+#Due: 6:00 pm, Sunday. Sept. 9 
+#Part 1
+Main
+  #Declare different times
+  int year, day, hours, minutes, seconds, population,   
+  Print "Enter current US. population: "
+  input population
+  set year = 0
+  For year = 0 To 1
+    For day = 0 To 365
+      For hours = 0 To 23
+        For minutes = To 59
+          For seconds = 0 To 59
+	    # one person is add to the population to account for new immigrant that takes place every 27 seconds
+	    population = population + 1
+	    For seconds = 0 To 27
+	    # one person is subtracted to the population to account for death that takes place every 12 seconds
+	      population = population -1
+              For seconds = 0 To 12 
+	        # one person is add to the population to account for birth that takes place every 8 seconds
+	        population = population +1
+                  For seconds = 0 To 8
+		    # One second is add to the clock
+	            seconds = seconds + 1
+	          End For
+                End For
+              End For
+            End For
+         End For
+      End For
+  End For
+  #The population after it reaches one year
+  Print "Population :", population
+End 
+		
+		
+  

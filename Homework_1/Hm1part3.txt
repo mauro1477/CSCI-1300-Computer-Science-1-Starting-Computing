@@ -1,0 +1,15 @@
+# Mauro Vargas 
+#CSCI 1300 CS1: Starting Computing 
+#Instructor: Fleming, Fall 2018 
+#Homework 1 
+#Due: 6:00 pm, Sunday. Sept. 9 
+#Part 3
+main
+  int celsius = 0
+  Print"Enter Celsius: "
+  input celsius
+  #Convert celsius to fahrenheit
+  fahrenheit = (celsius * 1.8)+ 32
+  #Print result
+  Print "Fahrenheit: ", fahrenheit
+End

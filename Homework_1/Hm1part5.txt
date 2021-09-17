@@ -1,0 +1,46 @@
+#Mauro Vargas 
+#CSCI 1300 CS1: Starting Computing 
+#Instructor: Fleming, Fall 2018 
+#Homework 1 
+#Due: 6:00 pm, Sunday. Sept. 9 
+#Part 5
+
+main model
+Do
+Print "Adventure game"
+Print "Please pick from one of the options below (a), (b) or (c)."
+Print "a. Fight the villain."
+Print "b. Save the citizen."
+Print "c. Return to secret base."
+input userOption
+
+#If its not any of these letters entered. The computer will ask the user to enter one of the options again. 
+While userOption != "a" OR userOption != "b" OR userOption != "c"
+	Print " Please reenter one of the option (a), (b), (c). "
+	Print "a. Fight the villain."
+	Print "b. Save the citizen."
+	Print "c. Return to secret base."
+	input userOption
+End while
+
+#If the answer is equal to (a) display "Fight the villan"
+#Else If the answer is equal to (b) display "Save the citizen"
+#Else display Return to secret base
+
+If (userOption = "a")
+{
+	Print "Fight the villain."
+}
+else if (userOption = "b")
+{
+	Print "Save the citizen"
+}
+else 
+{
+	Print "Return to secret base"
+}
+End
+
+
+
+

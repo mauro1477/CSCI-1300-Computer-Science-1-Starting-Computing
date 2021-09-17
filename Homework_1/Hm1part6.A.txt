@@ -1,0 +1,33 @@
+#Mauro Vargas 
+#CSCI 1300 CS1: Starting Computing 
+#Instructor: Fleming, Fall 2018 
+#Homework 1 
+#Due: 6:00 pm, Sunday. Sept. 9 
+#Part 6 A
+
+main model
+#The bank account is at $10,000.
+#initialize bank account total, months, totalmonths, years, interest rate.
+double bankAccount = 10000
+double bankAccountTotal = 0
+double insterstRate = 0.5
+int months = 0
+#While loop is use to preform the set assignments 
+#It will subract the $500 every month and 
+#keep track of the number of months by adding one every time
+while (bankAccount >= 0)
+	totalBankAccount = bankAccount - 500
+	finalBankAccount = totalBankAccount * 0.5
+	months = months + 1        
+End
+#set assignment
+#Divide months into years to get the amount of years and
+#account for the left over months
+years = months/12
+#This assignment below will get the left over amount of months 
+totalmonths = months % 12
+#At last the computer will print out the results for years and months
+#it took for the account to deplete
+Print "Years for the account to depleted: " , years , "Months: ", months
+End
+

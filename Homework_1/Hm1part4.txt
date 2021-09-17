@@ -1,0 +1,20 @@
+# Mauro Vargas 
+#CSCI 1300 CS1: Starting Computing 
+#Instructor: Fleming, Fall 2018 
+#Homework 1 
+#Due: 6:00 pm, Sunday. Sept. 9 
+#Part 4
+main
+  do
+  Print "Enter a number from one through ten (1-10): "
+  input number
+  #Validate the number is between 1-10
+  #If not ask the user to reenter the number
+  While number =< 1 OR number >= 10
+    Print "The number you have chosen is not in the range (1-10)."
+    Print "Enter another number:"
+    input number
+  End While
+  #Print number chosen by the user
+  Print "Number Enter: ", number
+End
